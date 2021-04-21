@@ -72,12 +72,15 @@ cloud function 생성 후 `cloudfunctionToBigQuery`에 포함되어 있는 `main
 배포된 app engine의 서비스로 이동하여 화면에 보이는 창에 메시지를 입력하게 되면 Cloud Function이 Trigger되서 bigQuery에 메시지를 저장할 수 있습니다. 
 
 ✓. Angular Web 상에서 메시지 수집
+
 ![이미지1](./public/angularWeb.png)
 
 ✓. 수집된 메시지를 Pub/Sub이 바라보는 상태에서 Streaming 수집이 진행되면 Cloud Function이 Trigger됩니다.
+
 ![이미지2](./public/cloudFunction.png)
 
 ✓. 수집된 메시지는 사전에 정의해둔 Schema 형태를 그대로 따르고 Data Warehouse 역할을 하는 bigQuery로 이관을 완료하게 됩니다. 
+
 ![이미지3](./public/bigQuery.png)
 
 
